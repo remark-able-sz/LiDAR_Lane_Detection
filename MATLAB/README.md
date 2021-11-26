@@ -12,7 +12,7 @@ intensity(find(intensity>100)) = 100;
 % pt_ori:pointcloud object
 pt_ori = pointCloud(xyz,'Intensity',intensity);
 ```
-2. Find the single line data from 80 lines and use Median Filter to soft data
+2. Find the single line data from 80 lines and use Median Filter to smooth data
 ```
 % Line 4 from the bottom to the top
 xyz_4 = double(xyz(1:80:144000,:));
